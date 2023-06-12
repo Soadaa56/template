@@ -93,5 +93,49 @@ body {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   font-family: 'DotGothic16', sans-serif;
+  display: grid;
+  padding-top: 3rem;
 }
 
+.sidebar-menu {
+  display: grid;
+  grid-template-rows: repeat(1fr, 6);
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+
+.sidebar-menu a {
+  color: var(--shade-dark-color);
+  text-decoration: none;
+  transition: all 0.22s ease-in-out;
+}
+
+.sidebar-menu a:hover {
+  color: hotpink;
+  font-size: 3rem;
+}
+
+
+.image-content > img {
+  width: 100px;
+}
+
+.grid-main-content {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns: repeat(1fr, 3);
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  align-items: center;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+
+.image-content {
+
+}
