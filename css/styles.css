@@ -119,24 +119,26 @@ body {
 
 
 .image-content > img {
-  width: 100px;
+  height: 50%;
+}
+
+.print > .image-content > img{
+  /* min-width: 150px; */
 }
 
 .grid-main-content {
   display: grid;
-  grid-template-rows: 1fr 5fr;
-  grid-template-columns: repeat(1fr, 3);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+  column-gap: 5rem;
 }
 
 .title {
   font-size: 2rem;
-  margin-bottom: 3rem;
   text-align: center;
-  align-items: center;
-  grid-column: 1 / 4;
-  grid-row: 1 / 2;
+  margin-bottom: 5rem;
 }
 
 .image-content {
-
+  /* border: 2px solid blue; */
 }
