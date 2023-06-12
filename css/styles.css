@@ -1,0 +1,97 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Above is CSS Reset */
+:root {
+  --main-bg-color: #A9AFD1;
+  --dark-accent-color: #22181C;
+  --light-accent-color: #CBEFB6;
+  --shade-light-color: #FAF8F8;
+  --shade-dark-color: #292747;
+}
+
+body {
+ background-color: var(--main-bg-color);
+ display: grid;
+ grid-template-columns: 1fr 6fr;
+ grid-template-rows: 1fr 6fr;
+ width: 100%;
+ height: 100vh;
+}
+
+#banner {
+  background-color: var(--dark-accent-color);
+  color: var(--shade-light-color);
+  font-size: 6rem;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  font-family: 'Silkscreen', cursive;
+}
+
+#banner > p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#sidebar {
+  background-color: var(--light-accent-color);
+  color: var(--shade-dark-color);
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+#main-content {
+  background-color: var(--main-bg-color);
+  color: var(--shade-dark-color);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-family: 'DotGothic16', sans-serif;
+}
+
