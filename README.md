@@ -28,3 +28,7 @@ I don't have any experience with making websites look good on mobile and this wo
 Realistically anyone my gf would like to show this website to would more than likely viewed from mobile. 
 
 I'm curious how rails can show different html to desktop vs mobile (and maybe pad) users.
+
+# Credits
+
+Use of Milk carton for icon [Freepik]("https://www.flaticon.com/free-icon/milk-box_3500274?term=milk+carton&page=1&position=5&origin=search&related_id=3500274")
