@@ -98,6 +98,7 @@ body {
 }
 
 .sidebar-menu {
+  font-size: 1.5rem;
   display: grid;
   grid-template-rows: repeat(1fr, 6);
   gap: 2rem;
