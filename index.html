@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Silkscreen&display=swap" rel="stylesheet">
+  <script src="./js/script.js" defer></script>
   <title>Milknthingzz</title>
 </head>
 <body>
@@ -16,6 +17,7 @@
   </div>
 
   <div id="sidebar">
+    <p class="closebtn" onclick="closeNav()">&times;</p>
     <ul class="sidebar-menu">
       <li><a href="./index.html">Home</a></li>
       <li><a href="">3-D Prints</a></li>
@@ -28,7 +30,7 @@
   </div>
 
   <div id="main-content">
-    <p class="title">3-D Prints</p>
+    <button class="openbtn" onclick="openNav()">&#9776; Sidebar</button>    <p class="title">3-D Prints</p>
     <div class="print grid-main-content">
       <div class="image-content">
         <img src="./img/3d-print/1-removebg-preview.png">

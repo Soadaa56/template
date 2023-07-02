@@ -85,16 +85,9 @@ body {
   grid-column: 1 / 2;
   grid-row: 2 / 4;
   font-family: 'DotGothic16', sans-serif;
-}
-
-#main-content {
-  background-color: var(--main-bg-color);
-  color: var(--shade-dark-color);
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  font-family: 'DotGothic16', sans-serif;
-  display: grid;
-  padding-top: 3rem;
+  width: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .sidebar-menu {
@@ -114,7 +107,7 @@ body {
 
 .sidebar-menu a:hover {
   color: hotpink;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 
@@ -124,6 +117,31 @@ body {
 
 .print > .image-content > img{
   /* min-width: 150px; */
+}
+
+.closebtn {
+  display: var(--shade-dark-color);
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 94%;
+}
+
+#main-content {
+  background-color: var(--main-bg-color);
+  color: var(--shade-dark-color);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-family: 'DotGothic16', sans-serif;
+  display: grid;
+}
+
+#main-content .openbtn {
+  max-width: fit-content;
+  height: 2rem;
+  background-color: var(--light-accent-color);
+  border: none;
+  text-align: left;
+  display: none;
 }
 
 .grid-main-content {
